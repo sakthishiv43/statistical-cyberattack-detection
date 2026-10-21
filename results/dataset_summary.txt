@@ -1,0 +1,17 @@
+PROJECT: Statistical Detection of Cyberattacks Using Network Traffic Data
+Student: Sakthi Shivram M | RegNo: 24BYB1168
+
+Input files:
+[1] "dataset.csv"
+
+Label column: Label 
+Rows analyzed: 50 
+Numeric candidate features: 7 
+Usable features: 7 
+Class counts (0=benign, 1=attack):
+
+ 0  1 
+25 25 
+
+Label values observed:
+[1] "BENIGN"   "DoS"      "PortScan"

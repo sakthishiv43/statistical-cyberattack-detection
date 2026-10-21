@@ -1,0 +1,26 @@
+LOGISTIC REGRESSION MODEL EVALUATION
+Student: Sakthi Shivram M | RegNo: 24BYB1168
+
+Training rows: 36 
+Test rows: 14 
+Features used: Flow_Duration, Fwd_Packets, Bwd_Packets, Flow_Bytes_per_s, Flow_Packets_per_s, Packet_Length_Mean, Packet_Length_Std 
+
+Confusion matrix (rows=actual, columns=predicted):
+               
+                Pred_Benign Pred_Attack
+  Actual_Benign           7           0
+  Actual_Attack           0           7
+
+Metrics (test set):
+Accuracy: 1.0000
+Accuracy approximate 95% Wilson CI: [0.7847, 1.0000]
+Sensitivity/Recall: 1.0000
+Sensitivity approximate 95% Wilson CI: [0.6457, 1.0000]
+Specificity: 1.0000
+Specificity approximate 95% Wilson CI: [0.6457, 1.0000]
+Precision: 1.0000
+F1 score: 1.0000
+ROC-AUC (rank-based): 1.0000
+
+Interpretation: these metrics describe this held-out random split only.
+They do not guarantee performance on a different network or future traffic.
