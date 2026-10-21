@@ -70,12 +70,17 @@ For the Welch two-sample t-test:
 Welch's test does not require equal population variances. A Wilcoxon rank-sum test is also included as a distribution/rank-based comparison. A small p-value indicates evidence against the relevant null hypothesis, but does not by itself show that a difference is practically important. Multiple feature tests increase the chance of false positives; interpret the results cautiously.
 
 ### 4.4 Logistic regression
-Let \(Y=1\) indicate an attack and \(Y=0\) indicate benign traffic. Logistic regression models
+Let \(Y=1\) indicate an attack and \(Y=0\) indicate benign traffic. Logistic regression model
 
-\[
-P(Y=1\mid X)=\frac{1}{1+e^{-(\beta_0+\beta_1X_1+\cdots+\beta_kX_k)}}.
-\]
+P(Y = 1 | X) = 1 / [1 + e^-(β₀ + β₁X₁ + β₂X₂ + ... + βₖXₖ)]
 
+Where:
+Y       = Predicted class (1 = Attack, 0 = Benign)
+P(Y=1|X)= Probability of an attack given the features
+β₀      = Intercept
+β₁...βₖ = Model coefficients
+X₁...Xₖ = Input features
+e       = Euler's number (≈ 2.718)
 The coefficients describe the association between predictors and log-odds of an attack, conditional on the other included predictors. They should not automatically be interpreted causally. The model is fitted on training data and evaluated on held-out data.
 
 ### 4.5 Evaluation metrics
