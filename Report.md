@@ -41,9 +41,20 @@ The script combines CSV files from the `data/` directory, standardizes column na
 
 ### 4.2 Descriptive statistics
 For each selected numeric feature, calculate:
-- Mean: \(\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i\)
-- Sample variance: \(s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2\)
-- Standard deviation: \(s=\sqrt{s^2}\)
+1. Mean:
+   x̄ = (x₁ + x₂ + ... + xₙ) / n
+
+2. Sample Variance:
+   s² = Σ(xᵢ - x̄)² / (n - 1)
+
+3. Standard Deviation:
+   s = √s²
+
+Where:
+n  = Number of observations
+xᵢ = Each observation
+x̄  = Sample mean
+Σ  = Sum of all values
 - Median and quartiles, which are less sensitive to extreme values.
 
 Histograms and boxplots help identify skewness, outliers, and class differences.
